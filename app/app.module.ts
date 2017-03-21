@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
+import { AppComponent }  from './app.component';
 import { FormsModule } from '@angular/forms'
+
+import { NgSemanticModule } from "ng-semantic";
+
+
 
 @NgModule({
   imports: 
   [ 
     BrowserModule , 
-    FormsModule
+    FormsModule,
+    NgSemanticModule
   ],
   declarations: 
   [ 

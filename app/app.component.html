@@ -1,2 +1,12 @@
-<p> Hello :) welcome to the app!</p>
+<sm-menu title="Angular2" class="inverted teal" logo="/assets/images/semantic.png">
+    <a sm-item *ngFor="let item of items" [icon]="item.icon">{{item?.title}}</a>
 
+    <sm-menu class="menu right secondary">
+        <a sm-item href="#/elements/menu" 
+            image="http://semantic-ui.com/images/avatar/small/stevie.jpg">Elliot Fu</a>
+        <a sm-item icon="sidebar big"></a>
+    </sm-menu>
+</sm-menu>
+
+<p> Hello :) welcome to the app!</p>
+<sm-button class="positive" (click)="clickMe($event)" icon="thumbs up">Click Me</sm-button>
